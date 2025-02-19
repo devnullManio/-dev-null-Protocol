@@ -1,0 +1,29 @@
+├── contracts
+│   ├── dev_null_vm
+│   │   ├── src
+│   │   │   ├── lib.rs         # Core VM logic
+│   │   │   ├── quantum_burn.rs 
+│   │   │   └── sacred_opcodes.rs
+│   │   └── Cargo.toml
+│   └── entropy_consensus
+│       ├── program
+│       │   └── src
+│       │       └── lib.rs     # Solana program
+├── frontend
+│   ├── src
+│   │   ├── components
+│   │   │   ├── QuantumBalance.js
+│   │   │   └── EntropyGraph.js
+│   │   └── utils
+│   │       └── wasm_entropy.wasm
+│   └── package.json
+├── oracle
+│   ├── kafka_node
+│   │   └── main.go            # Kafka-style oracle
+├── blackhole_storage
+│   ├── voidfs
+│   │   ├── voidfs.c           # Linux kernel module
+│   │   └── Makefile
+└── scripts
+    ├── deploy_chaos.sh
+    └── recursive_irony.py
